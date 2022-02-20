@@ -38,15 +38,15 @@
 }
 
 .item-correct,.item-correct:hover{
-    background-color: #6EE7B7;
-    border: 1px solid #6EE7B7;
-    color: #059669;
+    background-color: var(--light-green);
+    border: 1px solid var(--light-green);
+    color: var(--green);
 }
 
 .item-wrong,.item-wrong:hover{
-    background-color: #FCA5A5;
-    border: 1px solid #FCA5A5;
-    color: #DC2626;
+    background-color: var(--light-red);
+    border: 1px solid var(--light-red);
+    color: var(--red);
 }
 
 .question-list{
