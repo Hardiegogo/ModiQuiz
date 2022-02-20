@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #B9314F;
+    /* --dark-primary: #E86643; */
+    --primary-second: #B07ED9;
+    --grey: #9A9A9A;
+    --ivory: #F2F5EA;
+    --grey-quiz: #D6DBD2;
+    --dark-grey: #868686;
+    --lynx-grey: #C5C5C5;
+    --bx-color-light:#404A53;
+    --bg-color: #2C363F;
+    --pure-white: white;
+    --sm-space: 1.2rem;
+    --md-space: 2.4rem;
+    --lg-space: 3.2rem;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--ivory);
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.4rem;
+}
+
+.btn-quiz-hero {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: 15px;
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.hero-left {
+    display: grid;
+    place-items: center;
+}
+
+.hero-right {
+    display: grid;
+    place-items: center;
+}
+
+.hero-img {
+    max-width: 50rem;
+}
+
+
+/* CARD --------------------------------------  */
+.quiz-img {
+    max-height: 30rem;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--bx-color-light);
+    max-height: 45rem;
+}
+
+.card-footer i {
+    font-size: 2rem;
+    color: var(--primary-color);
+
+}
+
+.quiz-card-icon {
+    margin-left: auto;
+}
+
+.quiz-collection {
+    justify-items: center;
+    width: fit-content;
+    margin: 2.4rem auto 3.2rem auto;
+    gap: 7.2rem;
+
+}
+
+.card-quiz {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: var(--ivory);
+}
+
+.card-text:hover {
+    background-color: transparent;
+}
+
+.btn-quiz-card {
+    display: block;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+.card-text,
+.card-heading {
+    padding: 4px 1.2rem;
+}
+
+/* Footer --------------------------------  */
+
+.footer {
+    grid-area: footer;
+    background-color: var(--primary-color);
+    color: var(--pure-white);
+    padding: var(--lg-space);
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width:740px) {
+    .quiz-collection{
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 50%;
+    }
+
+    main{
+        width: 100%;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        text-align: center;
+        
+    }
+
+    .quiz-img{
+        max-width: 40rem;
+    }
+}
