@@ -1,12 +1,12 @@
 @import "./home_page.css";
 
-.question-container{
+.question-container,.rules-container{
     display: grid;
     place-items: center;
     height: 60vh;
 }
 
-.question{
+.question,.rules{
     min-width: fit-content;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
     background-color: var(--bx-color-light);

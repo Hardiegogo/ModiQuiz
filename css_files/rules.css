@@ -1,0 +1,13 @@
+
+.rule{
+    font-size: 1.6rem;
+    margin-bottom: var(--sm-space);
+}
+
+.btn-rules{
+    font-size: 1.6rem;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 2.4rem auto auto auto;
+}
